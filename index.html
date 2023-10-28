@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Animation</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <section
+      class="bg-black w-full h-[calc(100vh+600px)] flex justify-content"
+    >
+      <div
+        class="grid lg:grid-cols-3 max-w:[1300px] lg:px-20 px-5 lg:gap-8 gap-2 py-2 w-full fixed"
+      >
+        <div class="relative">
+          <p
+            id="scrollText1"
+            class="text-[#808080] font-bold text-lg hidden lg:absolute transition ease-in-out delay-150"
+          >
+            The chip uses powerful
+            <span class="text-white capitalize"> adaptation algorithms </span>
+            to process sound more quickly, tuning audio at the precise moment
+            you hear it. Every detail is rendered for your specific ear shape,
+            immersing you in
+            <span class="text-[#00ff41]"> higher‑fidelity sound. </span>
+          </p>
+          <p
+            id="scrollText2"
+            class="text-[#808080] font-bold text-lg hidden lg:absolute transition ease-in-out delay-150"
+          >
+            <span class="text-white capitalize">
+              An inward-facing microphone
+            </span>
+            works with voice enhancement algorithms to recognize and articulate
+            your voice, so your phone and video calls always
+            <span class="text-[#00ff41]"> sound completely natural. </span>
+          </p>
+        </div>
+
+        <div id="scroll-image" class="lg:order-none order-last relative skulls">
+          <img src="images/img1.png" id="airpod" />
+          <img
+            id="finalImage"
+            src="images/img3.png"
+            class="absolute top-0 w-[75%] opacity-40 hidden"
+          />
+        </div>
+        <div class="relative flex items-center justify-center">
+          <p
+            id="scrollText3"
+            class="text-[#808080] font-bold text-lg hidden lg:absolute transition ease-in-out delay-150"
+          >
+            <span class="text-white capitalize">
+              A custom-built driver and amplifier
+            </span>
+            work with the <span class="text-[#00ff41]"> H2 chip</span>
+            to provide lower distortion during playback, so you’ll hear deeper
+            bass and crisper highs — across all volume levels.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
